@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class EvenIOdd {
 
+	@SuppressWarnings("resource")
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		Scanner scan=new Scanner(System.in);
 		System.out.println("enter the number to check number is even or odd ");
 		int number=scan.nextInt();
