@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validatedropdoenbox(id ,errid){
+
+            return false;
+
+        }
+        function validatecheckbox(){
+
+            var flag=validatedropdoenbox("center","errcenter");
+            return flag;
+        }
+    </script>
+</head>
+<body>
+  <form action=""  onsubmit="return validation()">
+    <select name="center" id="center">
+        <option value="test"> ---select one---</option>
+        <option value="acts">acts</option>
+        <option value="Sunbeam">Sunbeam</option>
+    
+        <option value=" noida acts">iscad</option>
+    
+        <option value="iscad">know it</option>
+    
+        <option value="Iet">Iet</option>
+    
+        <option value="kharghar">kharghar</option>
+        <option value="karad">karad</option>
+      
+    
+       </select> <span  id="errcenter " style="color: red;">  </span>
+       <button type="submit" name="btn" value="submit" id="btn">Submit</button>
+  </form>
+</body>
+
+</html>

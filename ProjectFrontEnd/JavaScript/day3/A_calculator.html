@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+        function factorial(n){
+            var fact=1;
+            for(var i=1;i<=n;i++){
+                fact=fact*i;
+            }
+            return fact;
+        }
+
+
+
+        function calculate(event){
+            var id=event.target.id;
+            var n1=parseInt(document.getElementById("num1").value);
+            var n2=parseInt(document.getElementById("num2").value);
+
+            switch(id){
+                case "Add":
+                var Result=n1+n2;
+                
+                break;
+
+                case "Sub":
+                var Result=n1-n2;
+                break;
+
+                case "Fact":
+                var Result=factorial(n1);
+
+
+                break;
+            }
+
+            document.getElementById("result").innerHTML=Result;
+            document.getElementById("result1").value=Result;
+            
+
+
+
+
+
+
+
+        }
+    </script>
+</head>
+<body>
+    <form action="">
+
+        number1: <input type="text" name="num1" id="num1"  placeholder="Enter the numbmber 1"><br> 
+        number2: <input type="text" name="num2" id="num2"  placeholder="Enter the numbmber 2"><br>
+        Result: <input type="text" name="result" id="result1" placeholder="result"><br>
+
+        <button type="button" name="btn" id="Add" value="add" onclick="calculate(event)">Addition</button>
+        <button type="button" name="btn" id="Sub" value="add" onclick="calculate(event)">Subtarction</button>
+
+        <button type="button" name="btn" id="Fact" value="add" onclick="calculate(event)">Factorial</button>
+
+    </form>
+    <div id="result"> </div>
+
+</body>
+</html>

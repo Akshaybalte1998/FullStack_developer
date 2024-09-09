@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+        (
+            function(x,y){
+                document.write( " self calling",x,y)
+            }
+        )(12,16)
+        function f1(){
+            //colsure function
+            var m1=20;
+            function f2(){
+                var m2=12;
+                document.write("parent scope",m1);
+                document.write ( "own scope" ,m2);
+
+            }
+            f2();
+        }
+        f1();
+    </script>
+</body>
+</html>

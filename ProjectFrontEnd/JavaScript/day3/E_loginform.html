@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validationbox(id){
+            var data=document.getElementById(id).value;
+            
+        }
+
+
+
+        function validationdata()
+        {
+            var flag1=validationbox("usr")
+
+            return flag1 ;
+        }
+
+
+    </script>
+</head>
+<body>
+<form action="" onsubmit="return validationdata()" method="post" >
+    User Name: 
+    <input type="text" name="usr" id="usr" required minlength="5" maxlength="10">
+
+    <br>
+    Password:
+    <input type="password" name="pass" id="pass" minlength="5" max>
+
+    <br>
+    <button type="submit" name="btn" id="btn" >Log in</button>
+</form>
+    
+</body>
+</html>

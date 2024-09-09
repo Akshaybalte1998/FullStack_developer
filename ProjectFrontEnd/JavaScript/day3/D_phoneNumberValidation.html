@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+         const checkvalidation=function()
+        {
+            var mob=document.getElementById("mobile").value;
+            if(isFinite(mob) &&  mob.length==10){
+                document.getElementById("err").innerHTML="vaild mobile number"
+
+            }
+            else{
+                document.getElementById("err").innerHTML=" not vaild mobile number"
+
+
+            }
+
+        }
+
+    </script>
+</head>
+<body>
+    <form action="">
+        Phone Number: <input type="text" name="mob" id="mobile">
+        <span id="err" ></span><br>
+        <button type="button" id="btn" value="btn" name="" onclick="checkvalidation()">Check Validation</button>
+
+    </form>
+</body>
+</html>

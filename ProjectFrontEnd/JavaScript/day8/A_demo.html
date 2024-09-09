@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+        num.forEach((nums) => {
+            let square = nums * nums;
+            console.log(square);
+        });
+
+        let squarenum=num.map((val)=>
+        {
+            return val**3;
+        })
+        console.log(squarenum)
+        let res=0;
+        const output=num.reduce((res,curr)=>
+        {
+            return res+curr ;
+        })
+        console.log(" sum:" +output)
+        const max=num.reduce((res,curr)=>
+        {
+            return res>curr?res:curr ;
+        })
+        console.log("max: "+output)
+        const min=num.reduce((res,curr)=>
+        {
+            return res<curr ?res:curr;
+        })
+        console.log("min: "+output)
+     </script>
+</body>
+</html>

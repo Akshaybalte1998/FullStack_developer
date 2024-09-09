@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="message"></h1>
+    <form action="">
+        <input type="text" id="data" onchange="changedata()">
+        <input type="submit" value="submit">
+    </form>
+    <script>
+        var message=document.getElementById("message");
+        function changedata()
+        {
+            alert("pans");
+            var data=document.getElementById("data").value;
+            message.innerText=data;
+        }
+        
+    </script>
+</body>
+</html>

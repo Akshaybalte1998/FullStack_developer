@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function checkprime()
+        {
+            var n1=parseInt(document.getElementById("num").value);
+
+            var ans="prime";
+            for(var i=2;i<n1;i++)
+            {
+                if(n1%i==0)
+                {
+                    var ans=" not prime";
+                    break;
+                }
+            }
+            
+            document.getElementById("result").innerHTML= ans+n1;
+        }
+
+    </script>
+</head>
+<body>
+    <form action="">
+        number : <input type="text" id="num" placeholder="Enter a number">
+        <button type="button" id="prime" onclick="checkprime()"> Prime</button>
+
+    </form>
+<div id="result"></div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <script>
+        function f1()
+        {
+            document.write("in f1 <br>");
+        }
+        const f2=function()
+        {
+            document.write("IN f2 <br>");
+        }
+        function f3(x)
+        {
+            document.write("in f1 <br>",x);
+        }
+        const f4=function(x,y)
+        {
+            document.write("IN f2 <br>",x,y);
+        }
+        const f5=(x,y)=>
+        {
+            document.write("IN f2 <br>",x,y);
+        }
+        f1();
+        f2();
+        f3(1 ,1,578,85,28,2,8);// it do not give any error message 
+        f4(4,5);
+        f5(2,5,8);
+
+    </script>
+</body>
+</html>

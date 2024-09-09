@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 600px;
+            margin: 0 auto;
+        }
+        .login-box, .course-table, .add-course, .update-course {
+            border: 2px solid black;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .login-box input, .add-course input, .update-course input {
+            display: block;
+            margin-bottom: 10px;
+            width: 100%;
+            padding: 5px;
+        }
+        .login-box button, .course-table button, .add-course button, .update-course button {
+            display: inline-block;
+            padding: 5px 10px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        .course-table table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .course-table table, .course-table th, .course-table td {
+            border: 1px solid black;
+        }
+        .course-table th, .course-table td {
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Login Box -->
+        <div class="login-box">
+            <h2>Login</h2>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+            <button>Login</button>
+        </div>
+
+        <!-- Course Table -->
+        <div class="course-table">
+            <h2>Course Details</h2>
+            <table>
+                <tr>
+                    <th>Cid</th>
+                    <th>Cname</th>
+                    <th>Fees</th>
+                    <th>Duration</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td>101</td>
+                    <td>DAC</td>
+                    <td>125000</td>
+                    <td>6</td>
+                    <td>
+                        <button>Update</button>
+                        <button>Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>102</td>
+                    <td>DBDA</td>
+                    <td>150000</td>
+                    <td>6</td>
+                    <td>
+                        <button>Update</button>
+                        <button>Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>103</td>
+                    <td>DITISS</td>
+                    <td>140000</td>
+                    <td>6</td>
+                    <td>
+                        <button>Update</button>
+                        <button>Delete</button>
+                    </td>
+                </tr>
+            </table>
+            <button  >ADD</button>
+            <button style="float: right;">LOGOUT</button>
+        </div>
+
+        <!-- Add Course Form -->
+        <div class="add-course">
+            <h2>Add Course</h2>
+            <label for="cid">cid:</label>
+            <input type="text" id="cid" name="cid">
+            <label for="cname">cname:</label>
+            <input type="text" id="cname" name="cname">
+            <label for="fees">fees:</label>
+            <input type="text" id="fees" name="fees">
+            <label for="duration">duration:</label>
+            <input type="text" id="duration" name="duration">
+            <button>Save</button>
+        </div>
+
+        <!-- Update Course Form -->
+        <div class="update-course">
+            <h2>Update Course</h2>
+            <label for="update-cid">cid:</label>
+            <input type="text" id="update-cid" name="update-cid" value="103" readonly>
+            <label for="update-cname">cname:</label>
+            <input type="text" id="update-cname" name="update-cname" value="DITISS">
+            <label for="update-fees">fees:</label>
+            <input type="text" id="update-fees" name="update-fees" value="140000">
+            <label for="update-duration">duration:</label>
+            <input type="text" id="update-duration" name="update-duration" value="6">
+            <button>Modify</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function calculate()
+        {
+            var r=parseFloat(document.getElementById("radius").value);
+            if(isNaN(r)||r<=0){
+                alert("enter a number greater than o");
+                return;
+            }
+            var area=2*3.14*r*r;
+            var peri=2*3.14*r;
+
+           // document.getElementById("area").innerHTML=area;
+            //document.getElementById("peri").innerHTML=peri;
+            document.getElementById("area").value=area;
+            document.getElementById("peri").value=peri;
+
+            document.getElementById("area").focus;
+
+
+
+
+
+
+        }
+
+    </script>
+    <style>
+        form{
+            border: 2px solid blue;
+            border-radius: 5px;
+
+            padding: 10px;
+            max-width: 300px;
+            margin: auto;
+        }
+        input {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <form action="" >
+        Enter Radius:
+        <input type="text" name="radius" id="radius"  placeholder="enter radius"><br>
+        <button type="button" id="display" name="" value="" onclick="calculate()">Display</button><br>
+        Area: <input type="text" name="area" id="area" readonly><br>
+        perimeter: <input type="text" name="peri" id="peri" readonly>
+
+
+    </form>
+   
+</body>
+</html>

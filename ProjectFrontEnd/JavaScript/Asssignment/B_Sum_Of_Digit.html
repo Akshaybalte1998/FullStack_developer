@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of Digits</title>
+    <script>
+        function sumDigits() {
+            var num = document.getElementById("num").value;
+            var parsedNum = parseInt(num);
+
+            if (isNaN(parsedNum) || parsedNum <= 0 || parsedNum >= 1000) {
+                alert("Entered number is out of range or invalid");
+                return;
+            }
+
+            var sum = 0;
+            while (parsedNum > 0) {
+                var digit = parsedNum % 10;
+                sum += digit;
+                parsedNum = Math.floor(parsedNum / 10);
+            }
+
+            document.getElementById("add").value = sum;
+        }
+    </script>
+    <style>
+        form {
+            border: 2px solid blue;
+            border-radius: 5px;
+            padding: 10px;
+            max-width: 300px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="num">Number</label>
+        <input type="text" id="num" placeholder="Enter the number"><br>
+        <button type="button" onclick="sumDigits()">Click here</button> <br>
+        <label for="add">Sum Of Digits:</label>
+        <input type="text" id="add" readonly>
+    </form>
+</body>
+</html>

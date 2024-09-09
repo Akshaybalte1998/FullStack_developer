@@ -1,4 +1,5 @@
-package com.simpleCodes;
+  
+  package com.simpleCodes;
 
 import java.util.Scanner;
 
