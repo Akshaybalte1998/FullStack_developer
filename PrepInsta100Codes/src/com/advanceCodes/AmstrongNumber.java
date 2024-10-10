@@ -46,6 +46,11 @@ public class AmstrongNumber {
 		System.out.println("enter the   number to find number is Amstrong or not   :  ");
 		int number=scan.nextInt();
 		
+		//9474 
+		//9 4 +4 4 +7 4 +4 4=9474  =6561+256+2401+256=
+
+		//371
+		//3^3+7^3+1^1=371
 		int checkAmstrong=isAmstrong(number);
 		
 		if(checkAmstrong==number)

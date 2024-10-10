@@ -32,6 +32,10 @@ public class RverseArray {
 		
 		System.out.println(" ");
 		
+		
+		
+		
+		
 		System.out.println("making new array for reverse: ");
 		int[] reverseArray=new int[array.length];
 		int reverserLength=0;
@@ -39,7 +43,7 @@ public class RverseArray {
 		{
 			reverseArray[reverserLength++]=array[i];
 		}
-		
+	
 		
 		System.out.println("reverser array is : ");
 		for(int i=0;i<reverseArray.length;i++)

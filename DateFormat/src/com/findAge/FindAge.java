@@ -9,7 +9,7 @@ public class FindAge {
 	{
 		//LocalDate birthDate=LocalDate.of(1998,10,24);
 		LocalDate curDate=LocalDate.now();
-			LocalDate birthDate=LocalDate.parse("1998-10-24");
+		LocalDate birthDate=LocalDate.parse("1998-10-24");
 		
 		Period age=Period.between(birthDate, curDate);
 		System.out.println(age.getYears());

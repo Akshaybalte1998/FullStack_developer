@@ -22,6 +22,11 @@ public class ReturnUniqueCountOfArray {
 			System.out.print(array[i]+" ");
 		}
 		System.out.println(" ");
+		
+		
+		
+		
+		
         int len=array.length;
         for(int i=0;i<len;i++)
         {
@@ -33,6 +38,9 @@ public class ReturnUniqueCountOfArray {
                 }
             }
         }
+        
+        
+        
         int temp=0;
         for(int i=0;i<len;i++)
         {
@@ -44,6 +52,9 @@ public class ReturnUniqueCountOfArray {
               temp++;
             }
         }
+        
+        
+        
         int[] arr=new int[temp];
         int count=0;
         for(int i=0;i<len;i++)

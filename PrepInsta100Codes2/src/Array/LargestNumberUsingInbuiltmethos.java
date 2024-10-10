@@ -9,7 +9,6 @@ public class LargestNumberUsingInbuiltmethos {
 		System.out.println("enter the size of array : ");
 		int size=scan.nextInt();
 		int[] array=new int[size];
-	    System.out.println("enter the  "+size+" elemets: ");
 	    
 	    for(int i=0;i<size;i++)
 	    {

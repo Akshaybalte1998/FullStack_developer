@@ -24,7 +24,22 @@ public class NegativeNumberFirstAndPositiveNumberAtEnd {
 		
 		System.out.println(" ");
 		
-		Arrays.sort(array);
+		//Arrays.sort(array);
+		int len=array.length;
+		for(int i=0;i<len;i++)
+		{
+			for(int j=i+1;j<len;j++)
+			{
+				if(array[i]>array[j])
+				{
+					int temp=array[i];
+					array[i]=array[j];
+					array[j]=temp;
+				}
+			}
+		}
+		
+		
 		System.out.println("negative number first and paositive number last array is : ");
 		for(int i=0;i<array.length;i++)
 		{

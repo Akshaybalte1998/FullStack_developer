@@ -24,7 +24,7 @@ public class NeonNumber {
 		Scanner scan=new Scanner(System.in);
 		System.out.println("enter the   number to find number is neon number or not  :  ");
 		int number=scan.nextInt();
-		// 9square=81   8+1=9
+		// 9^2=81   8+1=9
 		
 		int checkNumber=isNeonNumber(number);
 		

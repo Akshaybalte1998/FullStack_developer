@@ -25,6 +25,11 @@ public class FrequencyOfArrayElemet {
 			System.out.print(array[i]+" ");
 		}
 		System.out.println(" ");
+		
+		
+		
+		
+		
 
 		int length=array.length;
 		System.out.println("frequencies count: ");

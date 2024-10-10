@@ -1,0 +1,78 @@
+package com.app.fruitBasket;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+import com.app.fruits.Apple;
+import com.app.fruits.Fruit;
+import com.app.fruits.Mango;
+import com.app.collectionUilts.populatedList;
+public class Tester {
+
+	@SuppressWarnings("resource")
+	public static void main(String[] args) {
+		 Scanner scan=new Scanner(System.in);
+//		 System.out.println("enter the size of an array list");
+//		 int size=scan.nextInt();
+		List<Fruit> basket=new ArrayList<>();
+		boolean exit=false;
+		int choise ;
+		while(!exit)
+		{
+			System.out.println("1.add mango");
+			System.out.println("2.add apple");
+			System.out.println("4.to display");
+			
+			System.out.println("enter the choise");
+			choise=scan.nextInt();
+			switch(choise)
+			{
+			case 1:
+				//basket.add(new Mango("Mango","yellow",0.800,true));
+				System.out.println("enter the mango name");
+				String name=scan.next();
+				System.out.println("enter the colour ");
+				String colour=scan.next();
+				System.out.println("enter the weight of mango");
+				double weight =scan.nextDouble();
+				System.out.println("enter fresh is fresh(true)or not(false)");
+				boolean fresh=scan.nextBoolean();
+				Mango mango=new Mango(name,colour,weight,fresh);
+				//basket.add();
+				basket.add(mango);
+				break;
+		
+			case 2:
+				basket.add(new Apple("Apples","red",0.3,true) );
+				break;
+			case 3:
+				basket=populatedList.collectionOfAlll();
+				break;
+			
+			
+			case 4:
+				basket.forEach(s->System.out.println(s));
+				break;
+			
+			
+			case 9:
+				exit=true;
+				break;
+			}
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

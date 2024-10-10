@@ -21,6 +21,11 @@ public class PalidrimeString {
 		else
 			System.out.println("string is not palidrome");
 		
+		
+		
+		
+		
+		
 		System.out.println("using for loop");
 		int len=name.length();
 		String reverse="";

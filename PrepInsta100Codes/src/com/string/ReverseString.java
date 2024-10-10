@@ -9,27 +9,23 @@ public class ReverseString {
 		Scanner sc =new Scanner(System.in);
 		System.out.println("enter the name : ");
 		String name=sc.next();
-		char[] nameArray=name.toCharArray();
-		reverseName(nameArray);
-		String reverseName=new String(nameArray);
-		System.out.println(reverseName);
+		
+	String reveseName=	reverseName(name);
+		System.out.println(reveseName);
+		
 
 	}
 
-	private static void reverseName(char[] n) 
+	private static String reverseName(String name) 
 	{
-		int left=0;
-		int right=n.length-1;
-		
-		while(left<right)
+		int len=name.length();
+		String rev="";
+		for(int i=len-1;i>=0;i--)
 		{
-			char temp=n[left];
-			n[left]=n[right];
-			n[right]=temp;
-			left++;
-			right--;
+			rev+=name.charAt(i);
+			
 		}
-		
+		return rev;
 	}
 
 }

@@ -22,6 +22,10 @@ public class RemoveDuplicateElementInArray {
 			System.out.print(array[i]+" ");
 		}
 		System.out.println(" ");
+		
+		
+		
+		
 		int l=array.length;
 		int count=0;
 		 int[] tempArray=new int[l];

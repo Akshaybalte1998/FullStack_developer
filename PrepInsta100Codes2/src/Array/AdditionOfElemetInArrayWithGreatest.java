@@ -25,6 +25,9 @@ public class AdditionOfElemetInArrayWithGreatest extends ArrayPrintInput {
 		}
 		
 		System.out.println(" ");
+		
+		
+		
 		int sum=0,nal=0;
 		int[] newArray =new int[array.length];
 		for(int i=0;i<array.length;i++)
@@ -39,7 +42,12 @@ public class AdditionOfElemetInArrayWithGreatest extends ArrayPrintInput {
 			}
 			newArray[nal++]=sum;
 		}
-		
+		System.out.println("array is : ");
+		for(int i=0;i<newArray.length;i++)
+		{
+			System.out.print(newArray[i]+" ");
+		}
+		System.out.println(" ");
 		Arrays.sort(newArray);
 		
 		System.out.println("array is : ");
@@ -48,6 +56,7 @@ public class AdditionOfElemetInArrayWithGreatest extends ArrayPrintInput {
 			System.out.print(newArray[i]+" ");
 		}
 		System.out.println(" ");
+		System.out.println(" largest element is ");
 		
 		System.out.println(newArray[newArray.length -1]);
 	}

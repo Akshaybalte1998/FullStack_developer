@@ -30,7 +30,6 @@ public class LargestElementOfArray {
 		System.out.println("enter the size of array : ");
 		int size=scan.nextInt();
 		int[] array=new int[size];
-	    System.out.println("enter the  "+size+" elemets: ");
 	    
 	    for(int i=0;i<size;i++)
 	    {
@@ -46,14 +45,14 @@ public class LargestElementOfArray {
 		System.out.println("");
 		
 		// using simple iteration 
-//		int largestNumber=array[0];
-//		for(int i=0;i<array.length;i++)
-//		{
-//			if(largestNumber<array[i])
-//				largestNumber=array[i];
-//		}
-//
-//		System.out.println("largest element is : "+largestNumber);
+		int largestNumber=array[0];
+		for(int i=0;i<array.length;i++)
+		{
+			if(largestNumber<array[i])
+				largestNumber=array[i];
+		}
+
+		System.out.println("largest element is : "+largestNumber);
 		
 		//using recursion
 		int n=array.length-1;

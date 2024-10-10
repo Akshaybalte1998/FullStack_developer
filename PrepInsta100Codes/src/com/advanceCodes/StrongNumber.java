@@ -34,6 +34,11 @@ public class StrongNumber {
 		System.out.println("enter the   number to find number is strong or not   :  ");
 		int number=scan.nextInt();
 	    
+		//145:
+		// 1 fact=1
+		//4 fact=24
+		//5 fact=120
+		//120+24+1=145
 		// calling function to return sum of given number for checking
 		int checkStong=isStrong(number);
 	
