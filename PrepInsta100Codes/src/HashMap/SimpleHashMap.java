@@ -32,6 +32,7 @@ public class SimpleHashMap {
 		
 		System.out.println(map.keySet());
 		System.out.println(map.values());
+		System.out.println("entryset");
 		System.out.println(map.entrySet());
 		
 		
