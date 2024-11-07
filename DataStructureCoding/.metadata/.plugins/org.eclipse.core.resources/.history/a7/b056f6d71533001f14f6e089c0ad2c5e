@@ -1,0 +1,37 @@
+package com.circularQueue;
+
+public class Queue 
+{
+
+	int [] array;
+	int size;
+	int rear;
+	int front;
+	
+	public Queue(int size)
+	{
+		this.size=size;
+		front=-1;
+		rear=-1;
+		array=new int[size];
+		
+	}
+	
+	public boolean isEmpty()
+	{
+		return front==-1&&rear==-1;
+	}
+	
+	public boolean isFull()
+	{		rear=(rear+1)%size;
+
+		return 
+	}
+	
+	
+	
+	
+	
+	
+	
+}

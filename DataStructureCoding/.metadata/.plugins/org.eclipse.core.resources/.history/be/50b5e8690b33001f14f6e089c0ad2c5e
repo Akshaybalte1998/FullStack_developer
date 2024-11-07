@@ -1,0 +1,23 @@
+package com.StringStack;
+
+public class Stack {
+
+	String[] name;
+	int top;
+	int size;
+	
+	public Stack(int size)
+	{
+		this.size=size;
+		top=-1;
+		name=new String[size];
+	}
+	
+	public int getSize()
+	{
+		return (top+1);
+	}
+	
+	
+	
+}

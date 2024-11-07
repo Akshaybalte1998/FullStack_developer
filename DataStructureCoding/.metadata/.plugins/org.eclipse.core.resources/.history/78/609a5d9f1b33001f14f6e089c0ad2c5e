@@ -1,0 +1,49 @@
+package com.LinearQueue;
+
+public class Queue {
+	
+	int[] arr;
+	int size;
+	int rear;
+	int front;
+	
+	public Queue(int size)
+	{
+		this.size=size;
+		rear=-1;
+		arr=new int[size];
+		front=-1;
+		}
+
+	public void add(int data) {
+
+	
+		if(isEmpty())
+		{
+			return ;
+		}
+		if(front==-1)
+		{
+			front=0;
+		}
+		arr[++rear]=data;
+	}
+
+	private boolean isEmpty() {
+		return rear==-1&&front==-1;
+	}
+
+	public void display() {
+		// TODO Auto-generated method stub
+		for(int i=rear;i>=0;i++)
+		{
+			System.out.println(arr[i]);
+		}
+	}
+	
+	
+	
+	
+	
+
+}

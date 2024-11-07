@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;improving.ReverseNumber&apos; to &apos;ReverseFullArray&apos;&#x0D;&#x0A;- Original project: &apos;Day1&apos;&#x0D;&#x0A;- Original element: &apos;improving.ReverseNumber&apos;&#x0D;&#x0A;- Renamed element: &apos;improving.ReverseFullArray&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;ReverseNumber&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;improving{ReverseNumber.java[ReverseNumber" matchStrategy="1" name="ReverseFullArray" qualified="false" references="true" similarDeclarations="false" stamp="1717696347983" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,14 @@
+package com.arrayList;
+
+import java.util.ArrayList;
+
+public class Stack {
+	
+	ArrayList<Integer> list=new ArrayList<Integer>();
+	
+	public boolean isEmpty()
+	{
+		return list.size()==0;
+	}
+	
+}

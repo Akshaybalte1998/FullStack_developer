@@ -1,0 +1,62 @@
+package com.stack;
+
+public class Stack 
+{
+	
+	private int [] arr;
+	private int top;
+	private int size;
+	
+	public Stack(int size)
+	{
+		this.size=size;
+		top=-1;
+		arr=new int[size];
+	}
+	
+//	.simple stack 
+//	1. Insert
+//	2. Delete
+//	3. Display
+//	4. Search
+//	5. Update
+//	6. Count
+	
+
+	public void insert(int data)
+	{
+		if(isFull())
+		{
+			System.out.println("stack is full");
+			return;
+		}
+		arr[++top]=data;
+		System.out.println("insert elemet is : "+arr[top]);
+	}
+	
+	public int delete()
+	{
+		if(isEmpty())
+		{
+			System.out.println("stack is empty");
+			return -1;
+		}
+		int result=arr[top--];
+		
+		return result;
+	}
+	
+	
+	
+	
+	
+
+private boolean isEmpty() {
+		// TODO Auto-generated method stub
+		return top==-1;
+	}
+
+private boolean isFull() {
+	return top==size-1;
+}
+}

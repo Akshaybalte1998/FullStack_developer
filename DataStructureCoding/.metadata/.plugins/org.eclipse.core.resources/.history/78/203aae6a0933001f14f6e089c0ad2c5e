@@ -1,0 +1,14 @@
+package com.arrayList;
+
+public class Main {
+	
+
+
+	public static void main(String[] args) {
+ 
+		Stack ss=new Stack(10);
+		int result =ss.isEmpty();
+		
+	}
+
+}

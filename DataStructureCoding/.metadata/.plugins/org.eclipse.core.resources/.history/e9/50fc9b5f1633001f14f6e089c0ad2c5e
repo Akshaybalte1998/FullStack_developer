@@ -1,0 +1,58 @@
+package com.circularQueue;
+
+public class Queue 
+{
+
+	int [] array;
+	int size;
+	int rear;
+	int front;
+	
+	public Queue(int size)
+	{
+		this.size=size;
+		front=-1;
+		rear=-1;
+		array=new int[size];
+		
+	}
+	
+	public boolean isEmpty()
+	{
+		return front==-1&&rear==-1;
+	}
+	
+	public boolean isFull()
+	{		
+		return  front==(rear+1)%size;
+
+	}
+
+	public void add(int data) {
+		// TODO Auto-generated method stub
+		if(isFull())
+		{
+			System.out.println("queue is full");
+			return ;
+		}
+		rear=(rear+1)%size;
+		array[rear]=data;
+	}
+	public int delete()
+	{
+		if(isEmpty())
+		{
+			System.out.println("queue is empty");
+			return 0;
+		}
+		
+		
+		return 0;
+	}
+	
+	
+	
+	
+	
+	
+}

@@ -1,0 +1,21 @@
+package com.linkedlist;
+
+ 
+
+
+public class LinkedlList {
+
+	Node head;
+
+	public Node getHead() {
+		return head;
+	}
+
+	public LinkedlList()
+	{
+		head=null;
+	}
+	
+	
+	
+}

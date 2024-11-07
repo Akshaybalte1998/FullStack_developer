@@ -1,0 +1,19 @@
+package com.arrayList;
+
+import java.util.ArrayList;
+
+public class Stack {
+	
+	int [] list;
+	int size;
+	int top;
+	public Stack( int size) {
+		super();
+	
+		this.size = size;
+		this.top = -1;
+		list=new int[size];
+	}
+	
+	
+}

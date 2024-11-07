@@ -1,0 +1,15 @@
+INDEX VERSION 1.131+C:\Users\balte\Desktop\improvement\.metadata\.plugins\org.eclipse.jdt.core
+2468660650.index
+1710760096.index
+3086198347.index
+120399287.index
+3498066710.index
+1054180536.index
+1818320769.index
+2228597084.index
+3380705583.index
+2361772636.index
+2995834453.index
+2565356412.index
+563837387.index
+1865797976.index

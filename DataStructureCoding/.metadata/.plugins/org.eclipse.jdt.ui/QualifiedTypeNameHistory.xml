@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="improving.Result"/>
+    <fullyQualifiedTypeName name="students.students"/>
+    <fullyQualifiedTypeName name="studentmangement.core.Student"/>
+    <fullyQualifiedTypeName name="studentmangement.utils.StudentUtils"/>
+    <fullyQualifiedTypeName name="studentmangement.core.ResultType"/>
+    <fullyQualifiedTypeName name="java.time.LocalDate"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="student.exception.StudentException"/>
+    <fullyQualifiedTypeName name="student.Utlis.StudentsValidate"/>
+    <fullyQualifiedTypeName name="student.Utlis.StudentsUtlis"/>
+    <fullyQualifiedTypeName name="student.Students.Student"/>
+    <fullyQualifiedTypeName name="student.Students.ResultType"/>
+    <fullyQualifiedTypeName name="java.lang.reflect.UndeclaredThrowableException"/>
+    <fullyQualifiedTypeName name="java.lang.LinkageError"/>
+    <fullyQualifiedTypeName name="LL.LinkedList"/>
+    <fullyQualifiedTypeName name="java.util.LinkedList"/>
+    <fullyQualifiedTypeName name="com.array.ArrayStack"/>
+    <fullyQualifiedTypeName name="java.util.Stack"/>
+    <fullyQualifiedTypeName name="java.util.Queue"/>
+    <fullyQualifiedTypeName name="javax.management.Query"/>
+    <fullyQualifiedTypeName name="java.util.ArrayDeque"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+</qualifiedTypeNameHistroy>
