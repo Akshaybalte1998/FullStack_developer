@@ -3,7 +3,7 @@ package Recursion;
 public class Sum {
 
 	public static int totalSum(int n)
-	{	int sum=0;
+	{	
 		if(n==0)
 		{
 			return  0;
