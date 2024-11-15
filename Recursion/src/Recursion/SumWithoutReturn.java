@@ -14,7 +14,7 @@ public class SumWithoutReturn {
 	private static int sum(int n, int i)
 	{
 		if(n==0)
-			return 0;
+			return i;
 		
 		return sum(n-1,i+n);
 		
