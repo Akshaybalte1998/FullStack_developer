@@ -27,7 +27,10 @@ public class Utility {
 		String password = sc.next();
 		System.out.println("Enter your dob ");
 		String dob = sc.next();
-		System.out.println("Enter your plan name ");
+		System.out.println("Enter your plan name 	SILVER(1000) \r\n"
+				+ "	,GOLD(2000)\r\n"
+				+ "	,DIAMOND(5000)\r\n"
+				+ "	,PLATINUM(10000);");
 		String plan = sc.next();
 		System.out.println("Enter your registration amount ");
 		double amount = sc.nextDouble();
